@@ -1,0 +1,24 @@
+{
+  "name": "scheduled-content",
+  "version": "1.0.0",
+  "description": "Schedule the display of a set of URLs via Google Sheets.",
+  "main": "index.htm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cook-company/scheduled-content.git"
+  },
+  "author": "The Cook Company <support@cook.company>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cook-company/scheduled-content/issues"
+  },
+  "homepage": "https://github.com/cook-company/scheduled-content#readme",
+  "dependencies": {
+    "html5-boilerplate": "^7.1.0",
+    "ical.js": "^1.3.0",
+    "papaparse": "^4.6.3"
+  }
+}
