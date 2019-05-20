@@ -1,30 +1,41 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="node_modules/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="node_modules/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="node_modules/purecss/build/pure-min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#000">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- Add your site or application content here -->
-  Hello world! This is HTML5 Boilerplate.
-  <script src="node_modules/html5-boilerplate/dist/js/vendor/modernizr-3.7.1.min.js"></script>
+  <form method="get" class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="default">Default Content URL:</label>
+            <input id="default" name="default" type="text">
+        </div>
+        <div class="pure-control-group">
+          <label for="ical">iCal URL:</label>
+          <input id="ical" name="ical" type="text">
+        </div>
+        <div class="pure-control-group">
+          <label for="csv">CSV URL:</label>
+          <input id="csv" name="csv" type="text">
+        </div>
+        <div class="pure-controls">
+          <button type="submit" class="pure-button">Submit</button> 
+          <a href="https://github.com/cook-company/scheduled-content/blob/master/README.md">help</a>
+        </div>
+    </fieldset>    
+  </form>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="node_modules/html5-boilerplate/dist/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="node_modules/html5-boilerplate/dist/js/plugins.js"></script>
   <script src="node_modules/ical.js/build/ical.min.js"></script>
   <script src="node_modules/papaparse/papaparse.min.js"></script>
   <script src="js/main.js"></script>

@@ -3,6 +3,12 @@ html, body{
     color: white;
     font-family: courier, monospace
 }
+a{
+    color: skyblue
+}
 body{
     padding: 40px;
+}
+input{
+    color: black;
 }
