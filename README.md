@@ -1,5 +1,5 @@
 # Scheduled Content
-Schedule the display of a set of URLs via Google Sheets.
+Schedule the display of a set of URLs via a public iCal (Google Calendar) or CSV (Google Sheets) URL.
 
 ## Settings
 
