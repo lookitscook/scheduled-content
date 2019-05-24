@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/cook-company/scheduled-content#readme",
   "dependencies": {
-    "ical.js": "^1.3.0",
-    "papaparse": "^4.6.3",
+    "jquery": "^3.4.1",
     "purecss": "^1.0.0"
   }
 }

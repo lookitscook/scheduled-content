@@ -17,19 +17,15 @@
   <form method="get" class="pure-form pure-form-aligned">
     <fieldset>
         <div class="pure-control-group">
-            <label for="default">Default Content URL:</label>
+            <label for="default">Default URL</label>
             <input id="default" name="default" type="text">
         </div>
         <div class="pure-control-group">
-          <label for="ical">iCal URL:</label>
-          <input id="ical" name="ical" type="text">
+          <label for="id">Google Sheet ID</label>
+          <input id="id" name="id" type="text">
         </div>
         <div class="pure-control-group">
-          <label for="csv">CSV URL:</label>
-          <input id="csv" name="csv" type="text">
-        </div>
-        <div class="pure-control-group">
-            <label for="scroll">Allow Scrolling?:</label>
+            <label for="scroll">Scrollable?</label>
             <select id="scroll" name="scroll">
                 <option value="yes">Yes</option>
                 <option value="no" selected>No</option>
@@ -42,9 +38,7 @@
     </fieldset>    
   </form>
   
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="node_modules/ical.js/build/ical.min.js"></script>
-  <script src="node_modules/papaparse/papaparse.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
