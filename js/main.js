@@ -9,12 +9,26 @@ document.getElementById('default').value = defaultUrl;
 document.getElementById('id').value = sheetId;
 document.getElementById('scroll').value = scrolling || 'no';
 
-if(defaultUrl && sheetId){
-    // load the specific content
-    document.body.classList.add('active');
-s
-    iframe = document.createElement('iframe');
-    iframe.src = defaultUrl;
-    iframe.scrolling = scrolling;
-    document.body.appendChild(iframe);
+if(!defaultUrl || !sheetId){
+    document.body.classList.remove('active');
 }
+
+$(function(){
+    if(defaultUrl && sheetId){
+        iframe = document.createElement('iframe');
+        iframe.scrolling = scrolling;
+
+        var jsonUrl = "https://spreadsheets.google.com/feeds/list/" + sheetId + "/1/public/values?alt=json-in-script&callback=?";
+        $.getJSON(jsonUrl, function(data) {
+            var entries = data.feed.entry.map(function(entry){
+                return {
+                    start: Date.parse(entry['gsx$start']['$t']),
+                    url: ['gsx$url']['$t']
+                }
+            });
+            console.log(entries);
+            iframe.src = defaultUrl;
+            document.body.appendChild(iframe);
+        });
+    }    
+});
