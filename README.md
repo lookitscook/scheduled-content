@@ -27,4 +27,6 @@ Schedule the display of a set of URLs via a public Google Sheet.
 
 ## Notes
 
-Google Sheet will be polled every 10 minutes to check for updates. If you are using Google Calendar and hosting this application on your own domain you will need to generate a new pubic Google Calendar API key and modify the value in `main.js`.
+1. You may use both Google Calendar and Google Sheets simultaneously. Schedules will be merged.
+2. Your data sources will be polled every 15 minutes to check for updates. 
+3. If you are using Google Calendar and hosting this application on your own domain you will need to generate a new pubic Google Calendar API key and modify the value in `main.js`.
