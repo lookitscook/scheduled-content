@@ -4,6 +4,7 @@ Schedule the display of a set of URLs via a public Google Sheet.
 ## Settings
 
 - **Default URL** will be used when no other content is schedule for this time. Required.
+- **Google Calendar ID** the ID of the publicly shared Google Calendar.
 - **Google Sheet ID** the ID of the publicly published Google Sheet.
 - **Scrollable?** determines whether scrollbars may be displayed on the scheduled content.
 
