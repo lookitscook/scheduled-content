@@ -109,7 +109,7 @@ function getSheet(minEnd, maxStart){
         return data.feed.entry.map(function(entry){
             return {
                 start: Date.parse(entry['gsx$start']['$t']),
-                url: ['gsx$url']['$t']
+                url: entry['gsx$url']['$t']
             };
         }).filter(function(entry){
             return entry.start <= maxStart.getTime()
